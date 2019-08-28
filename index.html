@@ -1,5 +1,24 @@
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
 <h1>Hello</h1>
 
 <script>
-alert("beep");
+
+//call a google script that creates a basic file
+
+
+
+$.ajax({
+  type: 'POST',
+  url: "https://script.google.com/macros/s/AKfycbxWAW2b3EPBLnPV2Wp2Fz2o9J9fzC_xzvCE1nOwZAEQwARumKU/exec",
+  data: {},
+  crossDomain: true,
+  timeout: 120000,
+  success:function(result){
+    //as it stands, this will never happen as Collector doesn't allow posts to it.
+  }
+});
 </script>
